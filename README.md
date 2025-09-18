@@ -2,14 +2,14 @@
 
 This repo ships precomputed results and a small viewer to explore them. Below I document the scientific rationale, the end-to-end procedure, and the data/assumption stack we used to generate the curves. If you want to reproduce, extend, or audit any step, get in touch (contact at the end) and we’ll share more.
 
-# TL;DR 🧭
+## TL;DR 🧭
 
 - We estimate how much CO₂ is durably retained by ERW over time under uncertainty.
 - Outputs are CAR curves: for a target confidence (e.g., CAR95), we show the guaranteed retained CO₂ (in kg per tonne promised) as a function of time.
 - Results are computed for several stone compositions (A–D) and multiple CAR levels (e.g., 95, 90, 85, 80).
 - The viewer lets you overlay multiple stones at one CAR, multiple CARs for one stone, or all combinations, with the mineral composition printed on each plot.
 
-# What’s in this repository 📁
+## What’s in this repository 📁
 
 - `results/`: precomputed results (JSON files).
 - `app.py`: viewer application (Streamlit).
@@ -17,7 +17,7 @@ This repo ships precomputed results and a small viewer to explore them. Below I 
 
 Each JSON contains time series of guarantee curves and the associated CAR percentiles (no model code included).
 
-# How to run ▶️
+## How to run ▶️
 
 1 - Clone the repo
 
@@ -50,7 +50,7 @@ View mode (stones@CAR, CARs@stone, or all)
 Each plot shows the mineral composition in the bottom-right legend.
 
 
-# Theoretical framework
+## Theoretical framework
 - State model: 1-D soil column (∼1 m, layered), monthly steps. Rock is mixed in the top layer.
 
 - Reaction rate: harmonic mean of (i) a kinetic volumetric rate (lab→field–penalized, temp & pH corrected) and (ii) a supply-limited rate set by advection and equilibrium porewater concentrations.
@@ -61,13 +61,13 @@ Each plot shows the mineral composition in the bottom-right legend.
 
 - Normalization: Guarantees reported as kg CO₂ per tonne promised, capped in [0,1000] by stoichiometry.
 
-# CAR definition:
+## CAR definition:
 
 Guaranteed retention at CARX is the (100−X)th percentile across Monte Carlo samples (e.g., CAR95 ⇒ P5).
 
 Carbon At Risk at time 𝑡 is 1000−guarantee(t) (kg per tonne).
 
-# How we produced the results (what’s inside the JSONs) 🔬
+## How we produced the results (what’s inside the JSONs) 🔬
 
 
 - Stone compositions: Each of A–D defines mass fractions over four proxy minerals with distinct kinetics/stoichiometry:
@@ -80,7 +80,7 @@ CaSiO₃, MgSiO₃ (2 mol CO₂/mol) and NaAlSi₃O₈, KAlSi₃O₈ (1 mol CO�
 - Outputs: For each stone, we compute guarantee curves at selected CAR levels (95/90/85/80) and store them with the time axis, percentiles, N, horizon, and the exact composition that generated them.
 
 
-# Caveats & scope 🚧
+## Caveats & scope 🚧
 
 - Gross CO₂ only, we do not subtract process emissions. In other words, these results exclude a full life-cycle assessment (LCA) of the ERW supply chain.
 
@@ -90,7 +90,7 @@ CaSiO₃, MgSiO₃ (2 mol CO₂/mol) and NaAlSi₃O₈, KAlSi₃O₈ (1 mol CO�
 
 - Results are composition and environment-dependent; regionalize inputs to move beyond the demo envelope.
 
-# Contact 🤝
+## Contact 🤝
 
 Jorge Veiras 
 ✉️ jorge@artiocarbon.com
