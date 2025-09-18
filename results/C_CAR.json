@@ -1,10 +1,10 @@
 {
   "composition_name": "C",
   "composition": {
-    "CaSiO3": 0.6000000000000001,
-    "MgSiO3": 0.10000000000000002,
-    "NaAlSi3O8": 0.20000000000000004,
-    "KAlSi3O8": 0.10000000000000002
+    "CaSiO3": 0.60,
+    "MgSiO3": 0.10,
+    "NaAlSi3O8": 0.20,
+    "KAlSi3O8": 0.10
   },
   "time_years": [
     0.0,

@@ -51,7 +51,7 @@ Each plot shows the mineral composition in the bottom-right legend.
 
 
 ## Theoretical framework
-- State model: 1-D soil column (∼1 m, layered), monthly steps. Rock is mixed in the top layer.
+- State model: 1-D soil column (∼1 m, layered), monthly steps. Rock is mixed in the top layer. 
 
 - Reaction rate: harmonic mean of (i) a kinetic volumetric rate (lab→field–penalized, temp & pH corrected) and (ii) a supply-limited rate set by advection and equilibrium porewater concentrations.
 
@@ -94,3 +94,13 @@ CaSiO₃, MgSiO₃ (2 mol CO₂/mol) and NaAlSi₃O₈, KAlSi₃O₈ (1 mol CO�
 
 Jorge Veiras 
 ✉️ jorge@artiocarbon.com
+
+## References
+ - Maher, K. (2010). The dependence of chemical weathering rates on fluid residence time. Earth and Planetary Science Letters, 294(1–2), 101–110. https://doi.org/10.1016/j.epsl.2010.03.010
+
+ - Maher, K., & Chamberlain, C. P. (2014). Hydrologic regulation of chemical weathering and the geologic carbon cycle. Science, 343(6178), 1502–1504. https://doi.org/10.1126/science.1250770
+
+ - Levy, C. R., Almaraz, M., Beerling, D. J., Raymond, P., Reinhard, C. T., Suhrhoff, T. J., & Taylor, L. (2024). Enhanced Rock Weathering for Carbon Removal–Monitoring and mitigating potential environmental impacts on agricultural land. Environmental Science & Technology, 58(39), 17215–17226. https://doi.org/10.1021/acs.est.4c02368
+
+ - Kantzas, E. P., Martin, M. V., Lomas, M. R., Eufrasio, R. M., Renforth, P., Lewis, A. L., Taylor, L. L., Mecure, J., Pollitt, H., Vercoulen, P. V., Vakilifard, N., Holden, P. B., Edwards, N. R., Koh, L., Pidgeon, N. F., Banwart, S. A., & Beerling, D. J. (2022). Substantial carbon drawdown potential from enhanced rock weathering in the United Kingdom. Nature Geoscience, 15(5), 382–389. https://doi.org/10.1038/s41561-022-00925-2
+ 
